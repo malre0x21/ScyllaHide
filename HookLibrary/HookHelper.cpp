@@ -34,7 +34,9 @@ const WCHAR * BadProcessnameList[] =
 	L"APIMonitor.exe",
 	L"apimonitor-x64.exe",
 	L"apimonitor-x86.exe",
-	L"cheatengine-" // cheatengine-i386.exe, cheatengine-x86_64.exe, cheatengine-x86_64-SSE4-AVX2.exe, ...
+	L"cheatengine-", // cheatengine-i386.exe, cheatengine-x86_64.exe, cheatengine-x86_64-SSE4-AVX2.exe, ...
+    L"binaryninja.exe",
+    
 };
 
 const WCHAR * BadWindowTextList[] =
@@ -54,7 +56,8 @@ const WCHAR * BadWindowTextList[] =
 	L"Process Monitor - Sysinternals: www.sysinternals.com",
 	L"API Monitor",
 	L"Monitored Processes",
-	L"Cheat Engine"
+	L"Cheat Engine",
+    L"Binary Ninja",
 };
 
 const WCHAR * BadWindowClassList[] =
@@ -72,7 +75,8 @@ const WCHAR * BadWindowClassList[] =
 	L"tgrzoom",
 	L"PROCMON_WINDOW_CLASS", // Process Monitor
 	L"APIMonitor By Rohitab",
-	L"99929D61-1338-48B1-9433-D42A1D94F0D2" // API Monitor
+	L"99929D61-1338-48B1-9433-D42A1D94F0D2", // API Monitor
+    L"Binary Ninja",
 };
 
 extern "C" void InstrumentationCallbackAsm();
